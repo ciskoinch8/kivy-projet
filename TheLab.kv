@@ -1,0 +1,79 @@
+PageLayoutExample:
+
+<PageLayoutExample@PageLayout>:
+    MainWidget:
+    BoxLayoutExample:
+    AnchorLayoutExample:
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint:1, None
+        height: self.minimum_height
+
+<StackLayoutExample>:
+    #orientation: "rl-bt"
+    #padding:("20dp", "20dp", "20dp", "20dp")
+    #spacing: "20dp", "20dp"
+   
+<GridLayoutExample@GridLayout>:
+    cols:3
+    rows:2
+    Button:
+        text:"A"
+    Button:
+        text:"B"
+    Button:
+        text:"c"
+    Button:
+        text:"D"
+    Button:
+        text:"E"
+    Button:
+        text:"F"
+      
+
+<AnchorLayoutExample>:
+    anchor_x: "center"
+    anchor_y: "bottom"
+    BoxLayout:
+        size_hint: .2, .2
+        Button:
+            text:"A"
+        Button:
+            text:"B"
+
+<BoxLayoutExample>:
+    orientation:"horizontal"
+    Button:
+        text:"J"
+        size_hint: .5, .5
+        pos_hint: {"center_y": .5}
+    BoxLayout:
+        orientation:"vertical"
+        spacing: "10dp"
+        Button:
+            text:"I1"
+        Button:
+            text:"I2"
+        Button:
+            text:"I3"
+        Button:
+            text:"I4"
+    Label:
+        text:"O"
+
+
+<MainWidget>:
+    Button:
+        text:'Hello'
+        size: "100dp", "100dp"
+        pos: "100dp", "200dp"
+        color: 0, 0, 1, 1
+        background_color: 0, 1, 0, 1
+
+    
+    Label:
+        text:'Hello2'
+        size: "100dp", "100dp"
+        pos: "200dp", "300dp"
+        color: 1, 0, 0, 1
